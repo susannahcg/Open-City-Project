@@ -3,10 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First GitHub Page</title>
+    <title>My Portfolio | Home</title>
+    <style>
+        /* Basic reset and typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #24292e; /* GitHub-style dark grey */
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #adb5bd;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        /* About Section */
+        .about-section {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2.5rem;
+            border: 1px solid #e1e4e8;
+        }
+        .about-section h2 {
+            margin-bottom: 1rem;
+            color: #24292e;
+            border-bottom: 2px solid #f1f1f1;
+            padding-bottom: 0.5rem;
+        }
+        /* Grid layout for the links */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-color: #0366d6;
+        }
+        .card h3 {
+            color: #0366d6;
+            margin-bottom: 0.5rem;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #586069;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            color: #6a737d;
+            border-top: 1px solid #e1e4e8;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my brand new GitHub Pages website.</p>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>A collection of my favorite media and projects</p>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h2>About Me</h2>
+            <p>Hello! Welcome to my GitHub Pages site. This platform serves as a central hub where I showcase different collections of visual media, creative projects, and video presentations. Feel free to browse through the different galleries linked below to explore my work.</p>
+        </section>
+
+        <section>
+            <h2 style="margin-bottom: 1.5rem; color: #24292e;">Explore Galleries</h2>
+            <div class="gallery-grid">
+                
+                <a href="photography.html" class="card">
+                    <div>
+                        <h3>Photography</h3>
+                        <p>A collection of high-resolution nature and urban landscape photographs.</p>
+                    </div>
+                </a>
+
+                <a href="travel-vlogs.html" class="card">
+                    <div>
+                        <h3>Travel Videos</h3>
+                        <p>Embedded video logs and cinematic recents from my travels around the world.</p>
+                    </div>
+                </a>
+
+                <a href="digital-art.html" class="card">
+                    <div>
+                        <h3>Digital Art</h3>
+                        <p>Showcasing my illustrations, 3D renders, and conceptual designs.</p>
+                    </div>
+                </a>
+
+                <a href="tutorials.html" class="card">
+                    <div>
+                        <h3>Video Tutorials</h3>
+                        <p>Step-by-step video guides and walk-throughs on web development.</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Your Name. Powered by GitHub Pages.</p>
+    </footer>
+
 </body>
 </html>
