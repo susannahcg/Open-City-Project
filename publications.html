@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open City Project | Home</title>
+    <title>Open City Project | Reports & Briefings</title>
     <style>
         /* Basic reset and typography */
         * {
@@ -36,8 +36,19 @@
             margin: 2rem auto;
             padding: 0 1rem;
         }
-        /* About Section */
-        .about-section {
+        /* Navigation / Back link style */
+        .back-link {
+            display: inline-block;
+            color: #ebe9e8;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        /* About Section / Description */
+        .description-section {
             background: #ebe9e8;
             padding: 2rem;
             border-radius: 6px;
@@ -45,13 +56,13 @@
             margin-bottom: 2.5rem;
             border: 1px solid #e1e4e8;
         }
-        .about-section h2 {
+        .description-section h2 {
             margin-bottom: 1rem;
             color: #46494d;
             border-bottom: 2px solid #f1f1f1;
             padding-bottom: 0.5rem;
         }
-        /* Grid layout for the links */
+        /* Grid layout for the PDF links */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -82,6 +93,19 @@
         .card p {
             font-size: 0.95rem;
             color: #586069;
+            margin-bottom: 1rem;
+        }
+        /* PDF Tag styling inside card */
+        .pdf-tag {
+            display: inline-block;
+            align-self: center;
+            background-color: #d1403c;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            text-transform: uppercase;
         }
         footer {
             text-align: center;
@@ -97,59 +121,51 @@
 
     <header>
         <h1>Open City Project</h1>
-        <p>What does it mean to move and make a home in the city?</p>
+        <p>Reports and Briefings Library</p>
     </header>
 
     <main>
-        <section class="about-section">
-            <h2>About</h2>
-            <p>The Open City Project was a three-year ESRC funded project (2020-2023) looking at the social and political life of the city to test whether the utopian ideal of the Open City exists in real life. It explored issues of race, migration, mobility and living with diversity, and how the city accommodates new forms of urban life, through the social configuration of its spaces and places. The project looked at the ways urban governments reflect, promote or limit the idea of the Open City, focusing at the city-wide, borough and street/housing block scale. </p>
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+        <section class="description-section">
+            <h2>Reports and Briefings</h2>
+            <p>Welcome to our document repository. Below you will find a collection of policy briefings, research summaries, and final reports compiled throughout the three-year duration of the Open City Project. These documents detail our empirical findings across different urban scales, aimed at influencing policy makers and encouraging inclusive urban planning.</p>
         </section>
 
         <section>
-            <h2 style="margin-bottom: 1.5rem; color: #24292e;">Our work</h2>
+            <h2 style="margin-bottom: 1.5rem; color: #24292e;">Available Downloads</h2>
             <div class="gallery-grid">
                 
-                <a href="publications.html" class="card">
+                <a href="pdfs/project-final-report.pdf" target="_blank" class="card">
                     <div>
-                        <h3>Publications</h3>
-                        <p>A collection of interdisciplinary academic publications spanning sociology, geography, urban studies, and architectural history resulting from this work</p>
+                        <h3>Final Project Report (2023)</h3>
+                        <p>A comprehensive overview of the three-year study, synthesizing observations on diversity, migration, and urban governance.</p>
                     </div>
+                    <span class="pdf-tag">PDF</span>
                 </a>
 
-                <a href="reports-briefings.html" class="card">
+                <a href="pdfs/policy-briefing-borough-scale.pdf" target="_blank" class="card">
                     <div>
-                        <h3>Reports and briefings</h3>
-                        <p>Delivered presentations with the aim of influencing policy, sharing our findings and provoking new ways of thinking about life in the city</p>
+                        <h3>Policy Briefing: Local Boroughs</h3>
+                        <p>Analyses focused on how borough-level planning committees reflect or limit the ideals of an open city environment.</p>
                     </div>
+                    <span class="pdf-tag">PDF</span>
                 </a>
 
-                <a href="artist-collab.html" class="card">
+                <a href="pdfs/urban-mobility-insights.pdf" target="_blank" class="card">
                     <div>
-                        <h3>Artistic collaborations</h3>
-                        <p>Work from three artist collaborations including film, installation, and a walking tour, co-produced across London</p>
+                        <h3>Urban Mobility Insights</h3>
+                        <p>An empirical assessment detailing how infrastructure and transport systems impact social integration in city centers.</p>
                     </div>
+                    <span class="pdf-tag">PDF</span>
                 </a>
 
-                <a href="local-partnershps.html" class="card">
+                <a href="pdfs/housing-diversity-summary.pdf" target="_blank" class="card">
                     <div>
-                        <h3>Project partnerships</h3>
-                        <p>We worked closely with numerous local, Camden-based, and city-wide organisation and benefited from their expertise to support the research, share our findings and guide our approach</p>
+                        <h3>Housing Block Case Study</h3>
+                        <p>A granular look at living experiences and community configuration within diverse high-density housing developments.</p>
                     </div>
-                </a>
-
-                <a href="gallery.html" class="card">
-                    <div>
-                        <h3>Image Gallery</h3>
-                        <p>A sampling of images from our wide-ranging work.</p>
-                    </div>
-                </a>
-                
-                <a href="project-team.html" class="card">
-                    <div>
-                        <h3>Project team</h3>
-                        <p>Core project team.</p>
-                    </div>
+                    <span class="pdf-tag">PDF</span>
                 </a>
 
             </div>
