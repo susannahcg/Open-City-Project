@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open City Project | Article library</title>
+    <style>
+        /* Basic reset and typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #e37d61;
+        }
+        header {
+            background-color: #46494d; /* GitHub-style dark grey */
+            color: #ebe9e8;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #adb5bd;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        /* Navigation / Back link style */
+        .back-link {
+            display: inline-block;
+            color: #ebe9e8;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Grid layout for the Images side-by-side */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+        .image-card {
+            background: #ebe9e8;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-color: #542C82;
+        }
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            object-fit: cover;
+            aspect-ratio: 4 / 3; /* Keeps standard sizing across images */
+        }
+        .image-caption {
+            margin-top: 0.75rem;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #46494d;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            color: #6a737d;
+            border-top: 1px solid #e1e4e8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Open City Project</h1>
+        <p>Article library</p>
+    </header>
+
+    <main>
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+        <section>
+            <h2 style="margin-bottom: 1.5rem; color: #46494d;">Published articles</h2>
+            
+            <div class="image-grid">
+
+                <a href="page1.html" class="image-card">
+                    <img src="images/page1.jpg" alt="Description of first page">
+                    <p class="image-caption">First Article Section</p>
+                </a>
+
+                <a href="page2.html" class="image-card">
+                    <img src="images/page2.jpg" alt="Description of second page">
+                    <p class="image-caption">Second Article Section</p>
+                </a>
+
+                <a href="page3.html" class="image-card">
+                    <img src="images/page3.jpg" alt="Description of third page">
+                    <p class="image-caption">Third Article Section</p>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Open City</p>
+    </footer>
+
+</body>
+</html>
