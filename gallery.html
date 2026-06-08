@@ -36,7 +36,18 @@
             margin: 2rem auto;
             padding: 0 1rem;
         }
-
+        /* Navigation / Back link style */
+        .back-link {
+            display: inline-block;
+            color: #ebe9e8;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
         /* Main Content / Gallery Styling */
         .main-content {
             margin-left: 250px; /* Matches the width of the sidebar to prevent overlap */
@@ -78,7 +89,7 @@
     </style>
 </head>
 <body>
-
+<a href="index.html" class="back-link">&larr; Back to Home</a>
     <main class="main-content">
         <h2>Project Gallery</h2>
         <div class="image-gallery">
