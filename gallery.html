@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open City Project | Project gallery</title>
+    <style>
+        /* Basic reset and typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #e37d61;
+        }
+        header {
+            background-color: #46494d; /* GitHub-style dark grey */
+            color: #ebe9e8;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #cfc5c2;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Main Content / Gallery Styling */
+        .main-content {
+            margin-left: 250px; /* Matches the width of the sidebar to prevent overlap */
+            padding: 40px;
+            flex-grow: 1;
+        }
+
+        .main-content h2 {
+            margin-bottom: 20px;
+            color: #C2C2C2;
+        }
+
+        /* Image Gallery Masonry Layout */
+        .image-gallery {
+            /* Sets column width and gap; lets browser decide column count dynamically */
+            column-width: 250px; 
+            column-gap: 10px;
+        }
+
+        .gallery-item {
+            /* Prevents a single item from splitting across columns */
+            break-inside: avoid; 
+            margin-bottom: 10px; /* Vertical gap between items */
+            overflow: hidden;
+            border-radius: 2px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto; /* Maintains natural aspect ratio */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="main-content">
+        <h2>Project Gallery</h2>
+        <div class="image-gallery">
+            <div class="gallery-item">
+                <img src="images/gallery1.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery1.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery2.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery3.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery4.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery5.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery6.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery7.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery8.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery9.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery10.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery11.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery12.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery13.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery14.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery15.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery16.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery17.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery18.webp.jpg" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery19.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery20.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery21.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery22.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery23.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery24.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery25.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery26.webp" alt="Image">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery27.webp" alt="Image">
+            </div>
+           
+        </div>
+    </main>
+
+</body>
+</html>
